@@ -1,0 +1,13 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: ./Client/book-tracking
+    ports:
+      - "3000:3000"
+
+  backend:
+    build:
+      context: ./Backend
+    ports:
+      - "8000:8000"
